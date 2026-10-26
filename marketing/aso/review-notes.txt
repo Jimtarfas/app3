@@ -1,0 +1,17 @@
+Fax and Scan sends real faxes. There is no account or login.
+
+FREE FEATURES (no purchase needed)
+- Send Fax tab: Scan (document camera), Photos or Files to add pages; Preview Fax shows the full PDF.
+- Cover Sheet tab: fill in the form, tap Preview, then print or share the cover sheet as a PDF.
+
+SENDING A FAX (needs the Fax & Scan Pro subscription)
+1. Open the Send Fax tab and enter any US or Canada fax number. If you don't have one, HP's public fax test line +1 (888) 473-2963 accepts faxes.
+2. Add a page with Scan, Photos or Files, or simply keep "Add cover sheet" switched on.
+3. Tap "Send Fax". The subscription screen appears. Buy either plan with your sandbox account (the yearly plan has a 3-day free trial).
+4. Confirm "Send Fax". The app opens the fax in History: Queued, then Sending, then Delivered. Delivery usually takes 1-2 minutes per page; pull to refresh.
+
+Our server verifies the signed StoreKit transaction and accepts sandbox purchases, so sending works during review. Faxes are delivered through our carrier (Telnyx).
+
+Restore Purchases is on the subscription screen and in Settings. Terms of Use (Apple standard EULA plus our terms) and the Privacy Policy are linked on the subscription screen, in Settings and in the description.
+
+Plans: Weekly $4.99/week; Yearly $39.99/year with a 3-day free trial. Both include up to 100 fax pages per 7 days to US and Canada numbers.

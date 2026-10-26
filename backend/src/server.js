@@ -4,14 +4,14 @@ import rateLimit from '@fastify/rate-limit';
 import crypto from 'node:crypto';
 import { PDFDocument } from 'pdf-lib';
 import { config } from './config.js';
-import { reserveFax, getFax, setProviderId, setStatus, pendingFaxes, pagesUsedThisWeek, housekeeping } from './db.js';
+import { reserveFax, getFax, getFaxByProviderId, setProviderId, setStatus, pendingFaxes, pagesUsedThisWeek, housekeeping } from './db.js';
 import { verifyEntitlement, EntitlementError } from './entitlements.js';
 import { provider, failureMessage, ProviderError } from './providers.js';
 import { normalizeFaxNumber } from './phone.js';
 
 const app = Fastify({
   logger: { redact: ['req.headers["x-test-token"]', 'req.headers.authorization'] },
-  bodyLimit: 64 * 1024,
+  bodyLimit: 256 * 1024,
   trustProxy: true,
 });
 
@@ -164,6 +164,15 @@ app.get('/v1/faxes/:id', async (req, reply) => {
   const fax = UUID.test(req.params.id) ? getFax(req.params.id) : null;
   if (!device || !fax || fax.device_id !== device) return fail(reply, 404, 'not_found', 'Fax not found.');
   return { fax: present(await refresh(fax)) };
+});
+
+// Telnyx calls this when a fax changes state. The payload isn't verified, so it only
+// triggers a re-read of the status from the provider's API.
+app.post('/webhooks/telnyx', async (req) => {
+  const providerId = req.body?.data?.payload?.fax_id;
+  const fax = typeof providerId === 'string' ? getFaxByProviderId(providerId) : null;
+  if (fax) await refresh(fax);
+  return { ok: true };
 });
 
 // Keep statuses moving even when nobody has the app open.

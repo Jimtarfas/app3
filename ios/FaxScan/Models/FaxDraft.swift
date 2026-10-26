@@ -17,6 +17,12 @@ final class FaxDraft {
     var includeCover = true
     var cover = CoverSheet.withSavedSender()
 
+    init() {
+        // Pages left over from a previous launch can't be reached any more.
+        try? FileManager.default.removeItem(at: PageStore.folder)
+        try? FileManager.default.createDirectory(at: PageStore.folder, withIntermediateDirectories: true)
+    }
+
     var totalPages: Int { pages.count + (includeCover ? 1 : 0) }
 
     var faxNumberE164: String? { PhoneFormatter.e164(faxDigits) }

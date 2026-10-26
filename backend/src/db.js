@@ -35,6 +35,7 @@ const statements = {
     to_number, pages, status, created_at, updated_at)
     VALUES (@id, @deviceId, @originalTransactionId, @environment, @provider, @to, @pages, 'queued', @now, @now)`),
   get: db.prepare('SELECT * FROM faxes WHERE id = ?'),
+  getByProviderId: db.prepare('SELECT * FROM faxes WHERE provider_fax_id = ?'),
   setProviderId: db.prepare('UPDATE faxes SET provider_fax_id = ?, updated_at = ? WHERE id = ?'),
   setStatus: db.prepare('UPDATE faxes SET status = ?, failure_reason = ?, updated_at = ? WHERE id = ?'),
   pending: db.prepare(`SELECT * FROM faxes WHERE status IN ('queued', 'sending') AND provider_fax_id IS NOT NULL
@@ -68,6 +69,7 @@ export function reserveFax(fax, limit) {
 }
 
 export const getFax = (id) => statements.get.get(id);
+export const getFaxByProviderId = (providerId) => statements.getByProviderId.get(providerId);
 export const setProviderId = (id, providerId) => statements.setProviderId.run(providerId, Date.now(), id);
 export const setStatus = (id, status, reason = null) => statements.setStatus.run(status, reason, Date.now(), id);
 export const pendingFaxes = () => statements.pending.all(Date.now() - 24 * 60 * 60 * 1000);
