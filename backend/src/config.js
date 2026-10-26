@@ -12,6 +12,8 @@ export const config = {
 
   // Usage limits. They are shown on the paywall, so keep them in sync with the app.
   weeklyPageLimit: Number(process.env.WEEKLY_PAGE_LIMIT ?? 100),
+  // TestFlight and App Review purchases are free sandbox purchases, so they get a smaller allowance.
+  sandboxWeeklyPageLimit: Number(process.env.SANDBOX_WEEKLY_PAGE_LIMIT ?? 20),
   maxPagesPerFax: Number(process.env.MAX_PAGES_PER_FAX ?? 50),
   maxUploadBytes: Number(process.env.MAX_UPLOAD_BYTES ?? 20 * 1024 * 1024),
   // Country calling codes that may be dialed, e.g. "1" for US and Canada.

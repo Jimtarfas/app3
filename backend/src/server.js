@@ -26,6 +26,9 @@ function deviceId(req) {
   return typeof id === 'string' && UUID.test(id) ? id.toLowerCase() : null;
 }
 
+const pageLimitFor = (entitlement) =>
+  entitlement.environment === 'Production' ? config.weeklyPageLimit : config.sandboxWeeklyPageLimit;
+
 function fail(reply, status, code, message, extra = {}) {
   return reply.code(status).send({ error: { code, message, ...extra } });
 }
@@ -61,7 +64,7 @@ app.get('/health', async () => ({ ok: true, provider: provider.name, configured:
 app.post('/v1/usage', async (req, reply) => {
   try {
     const ent = await verifyEntitlement(req.body?.transaction, req.headers['x-test-token']);
-    return { pagesUsed: pagesUsedThisWeek(ent.originalTransactionId), pageLimit: config.weeklyPageLimit };
+    return { pagesUsed: pagesUsedThisWeek(ent.originalTransactionId), pageLimit: pageLimitFor(ent) };
   } catch (err) {
     if (err instanceof EntitlementError) return fail(reply, 402, err.code, err.message);
     throw err;
@@ -138,11 +141,11 @@ app.post('/v1/faxes', {
     to,
     pages,
     now: Date.now(),
-  }, config.weeklyPageLimit);
+  }, pageLimitFor(entitlement));
   if (!reserved.ok) {
     return fail(reply, 429, 'quota_exceeded',
-      `Your plan includes ${config.weeklyPageLimit} pages per 7 days and you have ${Math.max(0, config.weeklyPageLimit - reserved.used)} left.`,
-      { pagesUsed: reserved.used, pageLimit: config.weeklyPageLimit });
+      `Your plan includes ${pageLimitFor(entitlement)} pages per 7 days and you have ${Math.max(0, pageLimitFor(entitlement) - reserved.used)} left.`,
+      { pagesUsed: reserved.used, pageLimit: pageLimitFor(entitlement) });
   }
 
   try {
@@ -156,7 +159,7 @@ app.post('/v1/faxes', {
   }
 
   req.log.info({ fax: id, pages, env: entitlement.environment }, 'fax queued');
-  return reply.code(201).send({ fax: present(getFax(id)), pagesUsed: reserved.used, pageLimit: config.weeklyPageLimit });
+  return reply.code(201).send({ fax: present(getFax(id)), pagesUsed: reserved.used, pageLimit: pageLimitFor(entitlement) });
 });
 
 app.get('/v1/faxes/:id', async (req, reply) => {
