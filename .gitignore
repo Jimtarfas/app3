@@ -1,0 +1,9 @@
+.DS_Store
+xcuserdata/
+DerivedData/
+build/
+*.xcarchive
+backend/node_modules/
+backend/data/
+backend/.env
+.env

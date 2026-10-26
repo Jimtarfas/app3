@@ -1,0 +1,61 @@
+name: FaxScan
+options:
+  bundleIdPrefix: com.faxandscan
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    DEVELOPMENT_TEAM: ZUCC9R4PP4
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  FaxScan:
+    type: application
+    platform: iOS
+    sources:
+      - path: FaxScan
+        excludes:
+          - "Resources/Products.storekit"
+      - path: FaxScan/Resources/Products.storekit
+        buildPhase: none
+    info:
+      path: FaxScan/Info.plist
+      properties:
+        CFBundleDisplayName: Fax & Scan
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSApplicationCategoryType: public.app-category.business
+        ITSAppUsesNonExemptEncryption: false
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSCameraUsageDescription: Fax & Scan uses the camera to scan the documents you want to fax.
+        LSSupportsOpeningDocumentsInPlace: false
+        UISupportsDocumentBrowser: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.faxandscan.app
+        PRODUCT_NAME: FaxScan
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_PREVIEWS: YES
+        SUPPORTS_MACCATALYST: NO
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+        SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD: NO
+schemes:
+  FaxScan:
+    build:
+      targets:
+        FaxScan: all
+    run:
+      config: Debug
+      storeKitConfiguration: FaxScan/Resources/Products.storekit
+    archive:
+      config: Release

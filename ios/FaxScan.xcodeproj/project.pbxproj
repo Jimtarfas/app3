@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		097FD659A67B619F731C1DED /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F4A5078953079B4562DBF /* RootView.swift */; };
+		0B8383899942AA33CE477D34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56280BFE4C83A8D71ECE5806 /* Assets.xcassets */; };
+		1318B2CA2A5ABE29291D770E /* DeviceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D20ED34FA3FB675CFD9D681 /* DeviceID.swift */; };
+		1A40E5DDFB44D7AD2EE2DA96 /* CoverSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E935360CBFA5E68C11A0A89 /* CoverSheet.swift */; };
+		1F58ACD6054559620D16373E /* CoverSheetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13170E93332BA898C9C3DC2F /* CoverSheetViews.swift */; };
+		2D3B425A9CCA6D6F7D452381 /* PhoneFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE946D01390C6E8DFBC50D1A /* PhoneFormatter.swift */; };
+		3BAECD006CDA784595325AC1 /* FaxScanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBDDD55E4239E0571A9DE4D /* FaxScanApp.swift */; };
+		5FCDA25AACA61BA38D2DEB26 /* FaxSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6FC80BADDED0EB7D5DD47 /* FaxSender.swift */; };
+		6C4003632076898EC099C9BD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 933B366E636DD1BCE1ED4FD0 /* PrivacyInfo.xcprivacy */; };
+		76FF92F8EE4893D93D383F1D /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17795CACA53A9B4044C519B4 /* PaywallView.swift */; };
+		80F08D40EBED13F3537A144C /* FaxDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B3732193A0AB56CD35CDC /* FaxDraft.swift */; };
+		8AD6A207BAF52BFB8AA7398C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D50F307D4266180864E46D4 /* SettingsView.swift */; };
+		98DD1E353601FF4AF8B08512 /* FaxRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47472E1A19B64BCF59277B3E /* FaxRecord.swift */; };
+		A636CB01C893FD0EBB8A6807 /* DemoMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C508296F3821D2FC25451F /* DemoMode.swift */; };
+		B82E0209711914A91B4E9D5D /* FaxAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAF16AD7904EB942FEF3211 /* FaxAPI.swift */; };
+		BBC5F8F26E5B34A3C023907D /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A0163DA487015BC52F2CF1 /* HistoryView.swift */; };
+		C3B8577D22FCE35AFE312161 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3FE1204D3867B6524C7FF /* Components.swift */; };
+		CB2275FFF84E431D76481761 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4757170DD7FCC006F4BBA1 /* Store.swift */; };
+		DB11C89E7E4E9A67BBF952D2 /* PDFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAAE177B5F9AB1DA6509A8 /* PDFBuilder.swift */; };
+		E8122D945F2DBD5DA7F4C121 /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D255F822C84AA9B2D46497D1 /* SendView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13170E93332BA898C9C3DC2F /* CoverSheetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverSheetViews.swift; sourceTree = "<group>"; };
+		17795CACA53A9B4044C519B4 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		1D20ED34FA3FB675CFD9D681 /* DeviceID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceID.swift; sourceTree = "<group>"; };
+		2D50F307D4266180864E46D4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		34B3FE1204D3867B6524C7FF /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		36C508296F3821D2FC25451F /* DemoMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoMode.swift; sourceTree = "<group>"; };
+		47472E1A19B64BCF59277B3E /* FaxRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaxRecord.swift; sourceTree = "<group>"; };
+		4EBDDD55E4239E0571A9DE4D /* FaxScanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaxScanApp.swift; sourceTree = "<group>"; };
+		51274C8DD898673524B16FF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		56280BFE4C83A8D71ECE5806 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E935360CBFA5E68C11A0A89 /* CoverSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverSheet.swift; sourceTree = "<group>"; };
+		812B3732193A0AB56CD35CDC /* FaxDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaxDraft.swift; sourceTree = "<group>"; };
+		933B366E636DD1BCE1ED4FD0 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A16F4A5078953079B4562DBF /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		ABAF16AD7904EB942FEF3211 /* FaxAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaxAPI.swift; sourceTree = "<group>"; };
+		AE946D01390C6E8DFBC50D1A /* PhoneFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFormatter.swift; sourceTree = "<group>"; };
+		B05396568D00703403EDF63A /* FaxScan.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FaxScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD4757170DD7FCC006F4BBA1 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		CEA6FC80BADDED0EB7D5DD47 /* FaxSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaxSender.swift; sourceTree = "<group>"; };
+		CF6F607A3027254E2D9FF1BF /* Products.storekit */ = {isa = PBXFileReference; path = Products.storekit; sourceTree = "<group>"; };
+		D255F822C84AA9B2D46497D1 /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
+		E9BAAE177B5F9AB1DA6509A8 /* PDFBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFBuilder.swift; sourceTree = "<group>"; };
+		F1A0163DA487015BC52F2CF1 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		28EA48DBA09E5D426D733F1E = {
+			isa = PBXGroup;
+			children = (
+				8B801771CD75092607130B5E /* FaxScan */,
+				48D6C1094526B21FA18880E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A26B774E51C6CA4599354D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E935360CBFA5E68C11A0A89 /* CoverSheet.swift */,
+				812B3732193A0AB56CD35CDC /* FaxDraft.swift */,
+				47472E1A19B64BCF59277B3E /* FaxRecord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		48D6C1094526B21FA18880E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B05396568D00703403EDF63A /* FaxScan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85228F76490104F657F6584E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				36C508296F3821D2FC25451F /* DemoMode.swift */,
+				4EBDDD55E4239E0571A9DE4D /* FaxScanApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8B801771CD75092607130B5E /* FaxScan */ = {
+			isa = PBXGroup;
+			children = (
+				51274C8DD898673524B16FF9 /* Info.plist */,
+				85228F76490104F657F6584E /* App */,
+				3A26B774E51C6CA4599354D4 /* Models */,
+				CAF302A5D4B830C91CBB9D3A /* Resources */,
+				CCDA3565C95F4E0C9CB5724F /* Services */,
+				8FE2F377CC2FD19CAF67854D /* Views */,
+			);
+			path = FaxScan;
+			sourceTree = "<group>";
+		};
+		8FE2F377CC2FD19CAF67854D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34B3FE1204D3867B6524C7FF /* Components.swift */,
+				13170E93332BA898C9C3DC2F /* CoverSheetViews.swift */,
+				F1A0163DA487015BC52F2CF1 /* HistoryView.swift */,
+				17795CACA53A9B4044C519B4 /* PaywallView.swift */,
+				A16F4A5078953079B4562DBF /* RootView.swift */,
+				D255F822C84AA9B2D46497D1 /* SendView.swift */,
+				2D50F307D4266180864E46D4 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CAF302A5D4B830C91CBB9D3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56280BFE4C83A8D71ECE5806 /* Assets.xcassets */,
+				933B366E636DD1BCE1ED4FD0 /* PrivacyInfo.xcprivacy */,
+				CF6F607A3027254E2D9FF1BF /* Products.storekit */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CCDA3565C95F4E0C9CB5724F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1D20ED34FA3FB675CFD9D681 /* DeviceID.swift */,
+				ABAF16AD7904EB942FEF3211 /* FaxAPI.swift */,
+				CEA6FC80BADDED0EB7D5DD47 /* FaxSender.swift */,
+				E9BAAE177B5F9AB1DA6509A8 /* PDFBuilder.swift */,
+				AE946D01390C6E8DFBC50D1A /* PhoneFormatter.swift */,
+				BD4757170DD7FCC006F4BBA1 /* Store.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3993EC82FBAFCB9C96C92D90 /* FaxScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51456245CAE87DDFC7A0050D /* Build configuration list for PBXNativeTarget "FaxScan" */;
+			buildPhases = (
+				1DCBB545D9A5D89B2FACCB97 /* Sources */,
+				0294341EA95EC1DF8D4F86CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaxScan;
+			packageProductDependencies = (
+			);
+			productName = FaxScan;
+			productReference = B05396568D00703403EDF63A /* FaxScan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EDFA5DD6312A12DDB2B26BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3993EC82FBAFCB9C96C92D90 = {
+						DevelopmentTeam = ZUCC9R4PP4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0A26BDADFA694FABECD401ED /* Build configuration list for PBXProject "FaxScan" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 28EA48DBA09E5D426D733F1E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 48D6C1094526B21FA18880E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3993EC82FBAFCB9C96C92D90 /* FaxScan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0294341EA95EC1DF8D4F86CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8383899942AA33CE477D34 /* Assets.xcassets in Resources */,
+				6C4003632076898EC099C9BD /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DCBB545D9A5D89B2FACCB97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B8577D22FCE35AFE312161 /* Components.swift in Sources */,
+				1A40E5DDFB44D7AD2EE2DA96 /* CoverSheet.swift in Sources */,
+				1F58ACD6054559620D16373E /* CoverSheetViews.swift in Sources */,
+				A636CB01C893FD0EBB8A6807 /* DemoMode.swift in Sources */,
+				1318B2CA2A5ABE29291D770E /* DeviceID.swift in Sources */,
+				B82E0209711914A91B4E9D5D /* FaxAPI.swift in Sources */,
+				80F08D40EBED13F3537A144C /* FaxDraft.swift in Sources */,
+				98DD1E353601FF4AF8B08512 /* FaxRecord.swift in Sources */,
+				3BAECD006CDA784595325AC1 /* FaxScanApp.swift in Sources */,
+				5FCDA25AACA61BA38D2DEB26 /* FaxSender.swift in Sources */,
+				BBC5F8F26E5B34A3C023907D /* HistoryView.swift in Sources */,
+				DB11C89E7E4E9A67BBF952D2 /* PDFBuilder.swift in Sources */,
+				76FF92F8EE4893D93D383F1D /* PaywallView.swift in Sources */,
+				2D3B425A9CCA6D6F7D452381 /* PhoneFormatter.swift in Sources */,
+				097FD659A67B619F731C1DED /* RootView.swift in Sources */,
+				E8122D945F2DBD5DA7F4C121 /* SendView.swift in Sources */,
+				8AD6A207BAF52BFB8AA7398C /* SettingsView.swift in Sources */,
+				CB2275FFF84E431D76481761 /* Store.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4BD7989AEAC4994BED674B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FaxScan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.faxandscan.app;
+				PRODUCT_NAME = FaxScan;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B801CDDD41A404F3B24879E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FaxScan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.faxandscan.app;
+				PRODUCT_NAME = FaxScan;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C176883926EF5AED11B13BD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ZUCC9R4PP4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C4CDC977967719E371EEF2CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ZUCC9R4PP4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A26BDADFA694FABECD401ED /* Build configuration list for PBXProject "FaxScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4CDC977967719E371EEF2CD /* Debug */,
+				C176883926EF5AED11B13BD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		51456245CAE87DDFC7A0050D /* Build configuration list for PBXNativeTarget "FaxScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD7989AEAC4994BED674B19 /* Debug */,
+				B801CDDD41A404F3B24879E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EDFA5DD6312A12DDB2B26BA /* Project object */;
+}

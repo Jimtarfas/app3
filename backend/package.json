@@ -1,0 +1,22 @@
+{
+  "name": "faxandscan-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend for Fax and Scan: verifies App Store subscriptions and sends faxes through Telnyx or Phaxio.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "test": "node --test test/"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@apple/app-store-server-library": "3.1.0",
+    "@fastify/multipart": "10.1.6",
+    "@fastify/rate-limit": "11.2.1",
+    "fastify": "5.12.7",
+    "pdf-lib": "1.17.1"
+  }
+}
