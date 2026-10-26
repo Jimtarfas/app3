@@ -90,6 +90,7 @@ export const provider = config.provider === 'phaxio' ? phaxio : telnyx;
 const messages = {
   receiver_no_answer: "The receiving fax machine didn't answer. Check the number and try again.",
   receiver_busy: 'The line was busy. Try again in a few minutes.',
+  user_busy: 'The line was busy. Try again in a few minutes.',
   receiver_decline: 'The call was declined by the receiving line.',
   receiver_call_dropped: 'The call dropped before the fax finished. Try again.',
   receiver_incompatible_destination: "The number answered, but it isn't a fax machine.",

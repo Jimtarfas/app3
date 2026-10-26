@@ -33,12 +33,14 @@ struct SendView: View {
                             get: { PhoneFormatter.pretty(draft.faxDigits) },
                             set: { draft.faxDigits = PhoneFormatter.nationalDigits($0) }))
                             .keyboardType(.phonePad)
-                            .textContentType(.telephoneNumber)
+                            // No autofill hint: iOS would offer the user's own number,
+                            // and this field is the recipient's fax.
+                            .textContentType(nil)
                             .font(.body.monospacedDigit())
                             .focused($numberFocused)
                     }
                     TextField("Recipient name (optional)", text: $draft.recipientName)
-                        .textContentType(.name)
+                        .textContentType(nil)
                 } header: {
                     Text("To")
                 } footer: {
