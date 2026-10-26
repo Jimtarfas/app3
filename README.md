@@ -6,6 +6,7 @@ An iPhone app (SwiftUI, iOS 17+) that scans documents, makes fax cover sheets an
 - **Bundle ID:** `com.faxandscan.app` · ASC app id 6826948675 · team ZUCC9R4PP4
 - **Subscriptions:** `com.faxandscan.app.weekly` ($4.99/week), `com.faxandscan.app.yearly` ($39.99/year, 3-day free trial), group "Fax and Scan Pro"
 - **Backend:** https://faxandscan-api.fly.dev (Fly app `faxandscan-api`, region iad)
+- **Fax carrier:** Telnyx fax application "Fax and Scan" (`3078868776435844474`), sending number +1 833-452-3118 (toll-free, also receives faxes, so it doubles as the test destination in the review notes)
 - **Website:** https://jimtarfas.github.io/fax-and-scan-site/ (public repo `Jimtarfas/fax-and-scan-site`, copied from `docs/`)
 
 ## Layout
